@@ -1,0 +1,4 @@
+FROM openjdk:17
+EXPOSE 8080
+ADD target/DockerJenkinsntegration.jar DockerJenkinsntegration.jar
+ENTRYPOINT ["java","jar","/DockerJenkinsntegration.jar"]
